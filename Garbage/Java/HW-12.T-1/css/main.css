@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/**
+ ** Style's <body>
+ **/
+body{
+	background-color:		#AAAAAA;
+
+	margin:			        150px;
+	padding:                        0px;
+}

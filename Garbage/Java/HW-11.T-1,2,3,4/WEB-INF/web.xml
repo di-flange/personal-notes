@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>GenerateTable</servlet-name>
+        <servlet-class>servlets.GenerateTable</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CountrysWatch</servlet-name>
+        <servlet-class>servlets.CountrysWatch</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>WordSearch</servlet-name>
+        <servlet-class>servlets.WordSearch</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GenerateTable</servlet-name>
+        <url-pattern>/1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>WordSearch</servlet-name>
+        <url-pattern>/2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CountrysWatch</servlet-name>
+        <url-pattern>/3</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,3 +1,1 @@
-Определение языка пользователя
-
-  (navigator.language || navigator.userLanguage).toLowerCase().split(/[_-]/)[0];
+Определение языка пользователя: `(navigator.language || navigator.userLanguage).toLowerCase().split(/[_-]/)[0];`

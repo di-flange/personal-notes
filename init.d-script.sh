@@ -8,7 +8,7 @@ case $1 in
     start)
         echo "Starting $SERVICE_NAME..."
         if [ ! -f $PID_STORE ]; then
-            nohup $RUN_COMMAND 2>> /var/astel/log/startup1.log >> /var/astel/log/startup2.log &
+            nohup $RUN_COMMAND 2>> /var/log/startup1.log >> /var/log/startup2.log &
                         echo $! > $PID_STORE
             echo "$SERVICE_NAME started ..."
         else

@@ -7,16 +7,32 @@ LOG_LOCATION="/var/log/$SERVICE_ALIAS"
 RUN_COMMAND="run.command"
 PID_STORE="/tmp/$SERVICE_ALIAS.pid"
 
+function run_app {
+    echo "$SERVICE_NAME starting ..."
+
+    cd $LOCATION
+    
+    nohup $RUN_COMMAND 2>> "$LOG_LOCATION/startup1.log" >> "$LOG_LOCATION/startup2.log" &
+                echo $! > $PID_STORE 
+                
+    echo "... started"
+}
+
+function stop_app {
+    echo "$SERVICE_NAME stopping ...";
+    
+    kill $1;
+    rm $PID_STORE
+    
+    echo "... stopped";  
+}
+
 case $1 in
     start)
-        echo "Starting $SERVICE_NAME..."
         if [ ! -f $PID_STORE ] || [ ! $(kill -s 0 "$(cat $PID_STORE)") ]; then
-            cd $LOCATION
-            nohup $RUN_COMMAND 2>> "$LOG_LOCATION/startup1.log" >> "$LOG_LOCATION/startup2.log" &
-                        echo $! > $PID_STORE
-            echo "... started"
+            run_app
         else
-            echo "... is already running."
+            echo "$SERVICE_NAME is already running."
         fi
     ;;
     status)
@@ -40,28 +56,18 @@ case $1 in
     ;;
     stop)
         if [ -f $PID_STORE ]; then
-            PID=$(cat $PID_STORE);
-            echo "$SERVICE_NAME stoping ..."
-            kill $PID;
-            echo "... stopped"
-            rm $PID_STORE
+            PID=$(cat $PID_STORE)
+            stop_app $PID
         else
             echo "$SERVICE_NAME is not running ..."
         fi
     ;;
     restart)
         if [ -f $PID_STORE ]; then
-            PID=$(cat $PID_STORE);
-            echo "$SERVICE_NAME stopping ...";
-            kill $PID;
-            echo "... stopped";
-
-            rm $PID_STORE
-
-            echo "$SERVICE_NAME starting ..."
-            nohup $RUN_COMMAND 2>> /var/astel/log/startup1.log >> /var/astel/log/startup2.log &
-                        echo $! > $PID_STORE
-            echo "... started"
+            PID=$(cat $PID_STORE)
+            
+            stop_app $PID
+            run_app
         else
             echo "$SERVICE_NAME is not running ..."
         fi

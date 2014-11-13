@@ -27,28 +27,39 @@ function stop_app {
     echo "... stopped";  
 }
 
+function is_runned {
+    if [ ! -z "$1" ]; then
+        echo $(ps -p $PID | grep $PID) > /dev/null
+    fi    
+}
+
 case $1 in
     start)
-        if [ ! -f $PID_STORE ] || [ ! $(kill -s 0 "$(cat $PID_STORE)") ]; then
+        if [ ! -f $PID_STORE ]; then
             run_app
         else
-            echo "$SERVICE_NAME is already running."
+            PID=$(cat $PID_STORE)
+            STATE=$(is_runned $PID)
+        
+            if [ -z "$STATE" ]; then 
+                echo "$SERVICE_NAME was runned but died (pid $PID - DIED UNEXPECTEDLY)."
+                rm $PID_STORE
+                
+                run_app
+            else 
+                echo "$SERVICE_NAME is already running (pid $PID)."
+            fi
         fi
     ;;
     status)
         if [ -f $PID_STORE ]; then
-            PID=$(cat $PID_STORE);
-            
-            if [ ! -z "$PID" ]; then
-                STATE=$(ps -p $PID | grep $PID) > /dev/null
-            else 
-                STATE=''
-            fi
+            PID=$(cat $PID_STORE)
+            STATE=$(is_runned $PID)
 
             if [ ! -z "$STATE" ]; then
                 echo "$SERVICE_NAME is running (pid $PID)."
             else
-                echo "$SERVICE_NAME is NOT running. (pid $PID - DIED UNEXPECTEDLY)"
+                echo "$SERVICE_NAME is NOT running (pid $PID - DIED UNEXPECTEDLY)."
             fi
         else
             echo "$SERVICE_NAME is NOT running."
@@ -65,11 +76,20 @@ case $1 in
     restart)
         if [ -f $PID_STORE ]; then
             PID=$(cat $PID_STORE)
-            
-            stop_app $PID
-            run_app
+            STATE=$(is_runned $PID)
+        
+            if [ -z "$STATE" ]; then 
+                echo "$SERVICE_NAME was runned but died (pid $PID - DIED UNEXPECTEDLY)."
+                rm $PID_STORE
+                
+                run_app
+            else 
+                stop_app $PID
+                run_app
+            fi
         else
             echo "$SERVICE_NAME is not running ..."
+            run_app
         fi
     ;;
 esac

@@ -29,7 +29,7 @@ function stop_app {
 
 function is_runned {
     if [ ! -z "$1" ]; then
-        echo $(ps -p $PID | grep $PID) > /dev/null
+        echo $(ps -p $PID | grep $PID)
     fi    
 }
 

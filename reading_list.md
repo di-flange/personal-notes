@@ -21,6 +21,9 @@
 17. The Well-Grounded Java Developer: Java 7 and Polyglot Programming on the JVM _by Benjamin J. Evans and Martijn Verburg_
 18. И ботаники делают бизнес _автор Максим Котин_
 
+#### Инфраструктура ####
+1. http://habrahabr.ru/post/236341/
+
 #### Архитектура и проектирование ####
 1. Patterns of Enterprise Application Architecture _by Martin Fowler_ ✓
 2. Domain-Driven Design: Tackling Complexity in the Heart of Software _by Eric Evans_

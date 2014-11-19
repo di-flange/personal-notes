@@ -23,3 +23,34 @@
                 arguments[decodeURIComponent(values[0])] = decodeURIComponent(values[1]);
             });
     }
+
+Подгрузка скриптов: 
+    
+    var rootPath = 'path_to/scripts/';
+
+    import = function(target, path) {
+        path = path || rootPath;
+    
+        if (typeof target === "string") {
+            this.requires(path + target);
+            return;
+        }
+    
+        if (typeof target === "boolean") {
+            if (target) this.requires(path)
+            return;
+        }
+    
+        if (typeof target === "object") {
+            Object.keys(target).forEach(function(key) {
+                requires(target[key], path + key + (typeof target[key] === 'boolean' ? '' : '/'))
+            });
+        }
+    
+    };
+    
+    requires = function(target) {
+        var imported = document.createElement('script');
+        imported.src = target;
+        document.head.appendChild(imported);
+    };

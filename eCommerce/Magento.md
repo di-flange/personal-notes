@@ -1,4 +1,10 @@
-Magento restore cart:
+Change base url:
+
+        select * 
+        from core_config_data 
+        where path in ('web/unsecure/base_url', 'web/secure/base_url', 'admin/url/custom');
+
+Restore cart:
 
     private function restoreShoppingCart($order) {
 
@@ -17,7 +23,8 @@ Magento restore cart:
         return true;
     }
     
-Mark order as paid
+Mark order as paid:
+
     $order->setStatus($paidStatus)->save();
     
     if ($order->getCanSendNewEmailFlag()) $order->sendNewOrderEmail();

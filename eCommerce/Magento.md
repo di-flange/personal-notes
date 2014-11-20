@@ -16,3 +16,23 @@ Magento restore cart:
 
         return true;
     }
+    
+Mark order as paid
+    $order->setStatus($paidStatus)->save();
+    
+    if ($order->getCanSendNewEmailFlag()) $order->sendNewOrderEmail();
+
+    if ($createInvoice) {
+        if(! $order->canInvoice()) Mage::throwException(Mage::helper('core')->__('Cannot create an invoice.'));
+
+            $invoice = Mage::getModel('sales/service_order', $order)->prepareInvoice();
+
+            $invoice->setRequestedCaptureCase(Mage_Sales_Model_Order_Invoice::CAPTURE_ONLINE);
+            $invoice->register();
+
+            Mage::getModel('core/resource_transaction')
+                ->addObject($invoice)
+                ->addObject($invoice->getOrder())
+                ->save();
+            }
+    }

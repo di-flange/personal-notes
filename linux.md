@@ -8,16 +8,16 @@
 ## Change time zone ##
 To check current time zone and time:
 
-        date && more /etc/timezone
+    date && more /etc/timezone
 
 To change date 
 
-        dpkg-reconfigure tzdata
+    dpkg-reconfigure tzdata
 
 Or automaticly
 
-        echo "Europe/Warsaw" > /etc/timezone    
-        dpkg-reconfigure -f noninteractive tzdata
+    echo "Europe/Warsaw" > /etc/timezone    
+    dpkg-reconfigure -f noninteractive tzdata
   
 Some zones: Europe/Warsaw, Europe/Tallinn, Europe/Moscow 
   
@@ -25,3 +25,8 @@ Some zones: Europe/Warsaw, Europe/Tallinn, Europe/Moscow
 Backap daily at 03:00
 
     
+## Change locale ##
+    
+    export LANGUAGE="en_US.UTF-8"
+    echo 'LANGUAGE="en_US.UTF-8"' >> /etc/default/locale
+    echo 'LC_ALL="en_US.UTF-8"' >> /etc/default/locale

@@ -8,6 +8,6 @@
 * Uml: Use Case
 * Uml: Activity diagram
 * Uml: State diagram
-* Uml: Static Structure diagram / ERD
+* Uml: Structure diagram / ERD
 * Mocks drawing
 * Specification by example

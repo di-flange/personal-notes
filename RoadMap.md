@@ -6,6 +6,7 @@
 * ООП
 * ФОП
 * АОП
+* DSL
 * Event-Driven Programming
 
 * Метапрограммирования (Reflection as part of it)

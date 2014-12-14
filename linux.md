@@ -33,3 +33,7 @@ Backap daily at 03:00
     
     locale-gen en_US.UTF-8
     dpkg-reconfigure locales
+
+## Merge Files ##
+    
+    for i in *; do cat "$i" >> ../target; echo >> ../target; done

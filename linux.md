@@ -20,11 +20,7 @@ Or automaticly
     dpkg-reconfigure -f noninteractive tzdata
   
 Some zones: Europe/Warsaw, Europe/Tallinn, Europe/Moscow 
-  
-## CRON daily night backup ##
-Backap daily at 03:00
 
-    
 ## Change locale ##
     
     export LANGUAGE="en_US.UTF-8"

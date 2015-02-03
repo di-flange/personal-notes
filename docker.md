@@ -15,6 +15,10 @@ Download base OS images:
     docker pull centos
     docker pull ubuntu
 
+List containers: 
+
+    docker ps
+
 ## Docker in VM 
 
 ## Docker UI

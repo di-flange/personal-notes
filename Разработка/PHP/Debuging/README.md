@@ -1,0 +1,6 @@
+![alt tag](/Разработка/PHP/Debuging/1.run_debug_configurations.png)
+![alt tag](/Разработка/PHP/Debuging/2.servers.png)
+![alt tag](/Разработка/PHP/Debuging/3.validate_remote_environment.png)
+![alt tag](/Разработка/PHP/Debuging/4.deployment.png)
+![alt tag](/Разработка/PHP/Debuging/5.deployment.png)
+![alt tag](/Разработка/PHP/Debuging/6.validate_remote_environment.png)

@@ -1,3 +1,17 @@
+# Prepare Vagrant for development
+
+## Plugins
+
+### Get ip of the guest
+
+    vagrant plugin install vagrant-guestip
+    
+Usage    
+    
+    vagrant guestip
+
+
+
 Digitalocean installation:
 
     vagrant plugin install vagrant-digitalocean

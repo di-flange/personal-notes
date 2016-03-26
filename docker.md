@@ -32,7 +32,7 @@ Build current directory
 
 ### Repository
 
-Free repository available on `http://hub.docker.com`. For with it name of images should be `<username>/<repository>`.
+Free repository available on `http://hub.docker.com`. For work with it name of images should be `<username>/<repository>`.
 
 Download image 
 

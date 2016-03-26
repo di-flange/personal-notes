@@ -22,7 +22,7 @@ Run deamon
 
 Attach to exist
 
-    docker run
+    docker attach <image>
 
 ### Build
 

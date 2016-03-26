@@ -56,3 +56,4 @@ Remove all untaged images
 
     alias dck-ps="docker ps -all"
     alias dck-img="docker images"
+    alias dck-img-rm="docker rmi"

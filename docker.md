@@ -2,23 +2,20 @@
 
 ## Work with
 
-Start:
+List images:
 
-    service docker start
-
-Autostart:
-
-    chkconfig docker on
-
-Download base OS images:
-
-    docker pull centos
-    docker pull ubuntu
+    docker images
 
 List containers: 
 
     docker ps
 
-## Docker in VM 
+## Clean up
 
-## Docker UI
+Remove all stoped containers 
+
+    docker rm $(docker ps -a -q)
+
+Remove all untaged images
+
+    docker rmi $(docker images | grep "^<none>" | awk "{print $3}") > /dev/null

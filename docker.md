@@ -59,3 +59,4 @@ Remove all untaged images
     alias d-img-rm="docker rmi"
     alias d-pull="docker pull"
     alias d-push="docker push"
+    alias d-build="docker build -t"

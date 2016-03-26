@@ -10,7 +10,39 @@ List containers:
 
     docker ps
 
-## Clean up
+### Run
+
+Run with bash
+
+    docker run -t -i <image> /bin/bash
+
+Run deamon
+
+    docker run -d <image>
+
+Attach to exist
+
+    docker run
+
+### Build
+
+Build current directory
+
+    docker build -t <image> .
+
+### Repository
+
+Free repository available on `http://hub.docker.com`. For with it name of images should be `<username>/<repository>`.
+
+Download image 
+
+    docker pull <image>
+
+Upload image 
+
+    docker push <image>
+
+### Clean up
 
 Remove all stoped containers 
 

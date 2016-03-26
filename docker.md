@@ -60,3 +60,6 @@ Remove all untaged images
     alias d-pull="docker pull"
     alias d-push="docker push"
     alias d-build="docker build -t"
+    alias d-run="docker run -t -i"
+    alias d-deamon="docker run -d"
+    alias d-attach="docker attach"

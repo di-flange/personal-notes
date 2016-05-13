@@ -1,0 +1,11 @@
+# Navigation
+alias to_devme="cd ~/DevMe/"
+alias to_dev="cd ~/Development/"
+alias to_vm="cd ~/VM/"
+
+# Manage mongodb
+alias mongo_up="cd ~/VM/mongodb/ && vagrant up && cd -"
+alias mongo_down="cd ~/VM/mongodb/ && vagrant halt && cd -"
+
+# Provisioning
+. ~/DevMe/jiss-provision/aliases.sh

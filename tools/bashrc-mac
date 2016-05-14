@@ -19,11 +19,22 @@ alias d_run="docker run -t -i"
 alias d_deamon="docker run -d"
 alias d_attach="docker attach"
 
-# Checks
+# Work with proc
 alias is_runned="ps aux | grep -v grep | grep"
+alias mem_top='ps wwaxm -o pid,%cpu,command | head -5'
+alias cpu_top="ps wwaxr -o pid,%cpu,command | head -5"
+alias ttop="top -R -F -s 10 -o rsize"
 
-# Other
+# Work with files
 alias watch="tail -f"
+alias search="find . -name"
+alias rsearch="find . -regex"
+
+# Networking 
+alias my_ip='curl ip.appspot.com && echo'
+alias open_conn='lsof -i'
+alias open_ports='lsof -i | grep LISTEN'
+alias flush_dns='dscacheutil -flushcache'
 
 # Provisioning
 . ~/DevMe/jiss-provision/aliases.sh

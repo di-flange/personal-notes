@@ -2,6 +2,7 @@
 alias to_devme="cd ~/DevMe/"
 alias to_dev="cd ~/Development/"
 alias to_vm="cd ~/VM/"
+alias to_log="cd /var/log/"
 
 # Manage mongodb
 alias mongo_up="cd ~/VM/mongodb/ && vagrant up && cd -"
@@ -17,6 +18,12 @@ alias d_build="docker build -t"
 alias d_run="docker run -t -i"
 alias d_deamon="docker run -d"
 alias d_attach="docker attach"
+
+# Checks
+alias is_runned="ps aux | grep -v grep | grep"
+
+# Other
+alias watch="tail -f"
 
 # Provisioning
 . ~/DevMe/jiss-provision/aliases.sh

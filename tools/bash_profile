@@ -7,5 +7,16 @@ alias to_vm="cd ~/VM/"
 alias mongo_up="cd ~/VM/mongodb/ && vagrant up && cd -"
 alias mongo_down="cd ~/VM/mongodb/ && vagrant halt && cd -"
 
+# Work with docker 
+alias d_ps="docker ps -all"
+alias d_img="docker images"
+alias d_img_rm="docker rmi"
+alias d_pull="docker pull"
+alias d_push="docker push"
+alias d_build="docker build -t"
+alias d_run="docker run -t -i"
+alias d_deamon="docker run -d"
+alias d_attach="docker attach"
+
 # Provisioning
 . ~/DevMe/jiss-provision/aliases.sh

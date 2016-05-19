@@ -31,6 +31,9 @@ alias watch="tail -f"
 alias search="find . -name"
 alias rsearch="find . -regex"
 
+# Git 
+alias git_cancel='git reset --soft HEAD~'
+
 # Networking 
 alias e_hosts='sudo nano /etc/hosts'
 alias my_ip='curl ip.appspot.com && echo'

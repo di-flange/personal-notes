@@ -9,3 +9,8 @@
 * Как сделать прибыльной разработку дизайна сайтов 3 http://habrahabr.ru/post/242387/
 * Как сделать прибыльной разработку дизайна сайтов 4 http://habrahabr.ru/post/242979/
 * Как сделать прибыльной разработку дизайна сайтов 5 http://habrahabr.ru/post/243449/
+ 
+## CQRS 
+* Building microservices with event sourcing and CQRS https://www.youtube.com/watch?v=A0goyZ9F4bg
+Довольно неплохо рассказано об базовых основах CQRS и разнице от обычного слоевого подхода.
+

@@ -14,6 +14,11 @@ alias mongo_restore="cd ~/VM/mongodb/ && vagrant ssh -c 'cd /vagrant/ && mongore
 alias maria_up="cd ~/VM/mariadb/ && vagrant up || cd -"
 alias maria_down="cd ~/VM/mariadb/ && vagrant halt || cd -"
 alias maria_reload="cd ~/VM/mariadb/ && vagrant reload || cd -"
+# TODO: Add mongo_restore to load DB dump
+
+# Development
+alias mvn_proxy_on="mv ~/.m2/settings.xml.tmp ~/.m2/settings.xml"
+alias mvn_proxy_off="mv ~/.m2/settings.xml ~/.m2/settings.xml.tmp"
 
 # Work with docker 
 alias d_ps="docker ps -all"

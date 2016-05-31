@@ -1,3 +1,7 @@
+# Loactaions
+export MONGO_VM="~/VM/mongodb/"
+export MARIA_VM="~/VM/mariadb/"
+
 # Navigation
 alias to_devme="cd ~/DevMe/"
 alias to_dev="cd ~/Development/"
@@ -5,21 +9,21 @@ alias to_vm="cd ~/VM/"
 alias to_log="cd /var/log/"
 
 # Manage mongodb
-alias mongo_up="cd ~/VM/mongodb/ && vagrant up || true; cd - >> /dev/null"
-alias mongo_down="cd ~/VM/mongodb/ && vagrant halt || true; cd - >> /dev/null"
-alias mongo_reload="cd ~/VM/mongodb/ && vagrant reload || true; cd - >> /dev/null"
-alias mongo_restore="cd ~/VM/mongodb/ && vagrant ssh -c 'cd /vagrant/ && mongorestore > tmp.log' 2> /dev/null && cat tmp.log && rm tmp.log || true; cd - >> /dev/null"
+alias mongo_up="cd $MONGO_VM && vagrant up || true; cd - >> /dev/null"
+alias mongo_down="cd $MONGO_VM && vagrant halt || true; cd - >> /dev/null"
+alias mongo_reload="cd $MONGO_VM && vagrant reload || true; cd - >> /dev/null"
+alias mongo_restore="cd $MONGO_VM && vagrant ssh -c 'cd /vagrant/ && mongorestore > tmp.log' 2> /dev/null && cat tmp.log && rm tmp.log $
 
 # Manage mariadb
-alias maria_up="cd ~/VM/mariadb/ && vagrant up || true; cd - >> /dev/null"
-alias maria_down="cd ~/VM/mariadb/ && vagrant halt || true; cd - >> /dev/null"
-alias maria_reload="cd ~/VM/mariadb/ && vagrant reload || true; cd - >> /dev/null"
+alias maria_up="cd $MARIA_VM && vagrant up || true; cd - >> /dev/null"
+alias maria_down="cd $MARIA_VM && vagrant halt || true; cd - >> /dev/null"
+alias maria_reload="cd $MARIA_VM && vagrant reload || true; cd - >> /dev/null"
 
 # Development
 alias mvn_proxy_on="mv ~/.m2/settings.xml.tmp ~/.m2/settings.xml"
 alias mvn_proxy_off="mv ~/.m2/settings.xml ~/.m2/settings.xml.tmp"
 
-# Work with docker 
+# Work with docker
 alias d_ps="docker ps -all"
 alias d_img="docker images"
 alias d_img_rm="docker rmi"
@@ -41,10 +45,10 @@ alias watch="tail -f"
 alias search="find . -name"
 alias rsearch="find . -regex"
 
-# Git 
+# Git
 alias git_cancel='git reset --soft HEAD~'
 
-# Networking 
+# Networking
 alias e_hosts='sudo nano /etc/hosts'
 alias my_ip='curl ip.appspot.com && echo'
 alias open_conn='lsof -i'

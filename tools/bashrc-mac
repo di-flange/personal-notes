@@ -33,6 +33,9 @@ alias d_build="docker build -t"
 alias d_run="docker run -t -i"
 alias d_deamon="docker run -d"
 alias d_attach="docker attach"
+alias d_rm_stopped="docker rm $(docker ps -a -q)"
+alias d_rm_stopped="docker rm $(docker ps -a -q)"
+alias d_rm_untagged='docker rmi $(docker images | grep "^<none>" | awk "{print $3}") > /dev/null'
 
 # Work with proc
 alias is_runned="ps aux | grep -v grep | grep"

@@ -5,16 +5,15 @@ alias to_vm="cd ~/VM/"
 alias to_log="cd /var/log/"
 
 # Manage mongodb
-alias mongo_up="cd ~/VM/mongodb/ && vagrant up || cd -"
-alias mongo_down="cd ~/VM/mongodb/ && vagrant halt || cd -"
-alias mongo_reload="cd ~/VM/mongodb/ && vagrant reload || cd -"
-alias mongo_restore="cd ~/VM/mongodb/ && vagrant ssh -c 'cd /vagrant/ && mongorestore > tmp.log' 2> /dev/null && cat tmp.log && rm tmp.log || cd -"
+alias mongo_up="cd ~/VM/mongodb/ && vagrant up || true; cd - >> /dev/null"
+alias mongo_down="cd ~/VM/mongodb/ && vagrant halt || true; cd - >> /dev/null"
+alias mongo_reload="cd ~/VM/mongodb/ && vagrant reload || true; cd - >> /dev/null"
+alias mongo_restore="cd ~/VM/mongodb/ && vagrant ssh -c 'cd /vagrant/ && mongorestore > tmp.log' 2> /dev/null && cat tmp.log && rm tmp.log || true; cd - >> /dev/null"
 
 # Manage mariadb
-alias maria_up="cd ~/VM/mariadb/ && vagrant up || cd -"
-alias maria_down="cd ~/VM/mariadb/ && vagrant halt || cd -"
-alias maria_reload="cd ~/VM/mariadb/ && vagrant reload || cd -"
-# TODO: Add mongo_restore to load DB dump
+alias maria_up="cd ~/VM/mariadb/ && vagrant up || true; cd - >> /dev/null"
+alias maria_down="cd ~/VM/mariadb/ && vagrant halt || true; cd - >> /dev/null"
+alias maria_reload="cd ~/VM/mariadb/ && vagrant reload || true; cd - >> /dev/null"
 
 # Development
 alias mvn_proxy_on="mv ~/.m2/settings.xml.tmp ~/.m2/settings.xml"

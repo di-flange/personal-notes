@@ -1,4 +1,0 @@
-
-## Graphic: 
-* Skitch
-* Pixlr

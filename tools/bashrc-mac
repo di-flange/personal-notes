@@ -60,3 +60,8 @@ alias flush_dns='dscacheutil -flushcache'
 
 # Provisioning
 . ~/DevMe/jiss-provision/aliases.sh
+
+function sublime {
+    /Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text $1 2> /dev/null & 
+} 
+

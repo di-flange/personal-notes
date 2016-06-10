@@ -73,6 +73,9 @@ alias open_conn="lsof -i"
 alias open_ports="lsof -i | grep LISTEN"
 alias flush_dns="dscacheutil -flushcache"
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport" 
+alias flush_dns="sudo killall -HUP mDNSResponder"
+alias wifi_on="networksetup -setairportpower airport on" 
+alias wifi_off="networksetup -setairportpower airport off"
 
 # Provisioning
 . ~/DevMe/jiss-provision/aliases.sh

@@ -23,6 +23,10 @@ alias maria_reload="cd $MARIA_VM && vagrant reload || true; cd - >> /dev/null"
 alias mvn_proxy_on="mv ~/.m2/settings.xml.tmp ~/.m2/settings.xml"
 alias mvn_proxy_off="mv ~/.m2/settings.xml ~/.m2/settings.xml.tmp"
 
+function sublime {
+    /Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text $1 2> /dev/null & 
+} 
+
 # Work with docker
 alias d_ps="docker ps -all"
 alias d_img="docker images"
@@ -60,8 +64,3 @@ alias flush_dns='dscacheutil -flushcache'
 
 # Provisioning
 . ~/DevMe/jiss-provision/aliases.sh
-
-function sublime {
-    /Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text $1 2> /dev/null & 
-} 
-

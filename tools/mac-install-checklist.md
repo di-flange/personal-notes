@@ -1,9 +1,12 @@
 ## Command line 
-GIT
-CURL
+* GIT
+* CURL
+* icdiff (brew install icdiff)
 
-HTTPie (brew install HTTPie)
+* Vagrant
+* Docker
 
+* HTTPie (brew install HTTPie)
 
 ## Graphic: 
 * Skitch

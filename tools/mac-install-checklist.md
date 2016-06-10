@@ -2,6 +2,7 @@
 * GIT
 * CURL
 * icdiff (brew install icdiff)
+* ffmpeg
 
 * Vagrant
 * Docker

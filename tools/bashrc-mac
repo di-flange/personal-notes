@@ -1,5 +1,4 @@
 #!/bin/bash
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/aiskov/.sdkman"
 [[ -s "/Users/aiskov/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/aiskov/.sdkman/bin/sdkman-init.sh"
 
@@ -72,6 +71,7 @@ alias my_ip="curl ip.appspot.com && echo"
 alias open_conn="lsof -i"
 alias open_ports="lsof -i | grep LISTEN"
 alias flush_dns="dscacheutil -flushcache"
+alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport" 
 
 # Provisioning
 . ~/DevMe/jiss-provision/aliases.sh

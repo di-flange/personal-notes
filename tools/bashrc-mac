@@ -1,3 +1,8 @@
+#!/bin/bash
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/aiskov/.sdkman"
+[[ -s "/Users/aiskov/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/aiskov/.sdkman/bin/sdkman-init.sh"
+
 # Loactaions
 export MONGO_VM="~/VM/mongodb/"
 export MARIA_VM="~/VM/mariadb/"
@@ -12,7 +17,8 @@ alias to_log="cd /var/log/"
 alias mongo_up="cd $MONGO_VM && vagrant up || true; cd - >> /dev/null"
 alias mongo_down="cd $MONGO_VM && vagrant halt || true; cd - >> /dev/null"
 alias mongo_reload="cd $MONGO_VM && vagrant reload || true; cd - >> /dev/null"
-alias mongo_restore="cd $MONGO_VM && vagrant ssh -c 'cd /vagrant/ && mongorestore > tmp.log' 2> /dev/null && cat tmp.log && rm tmp.log $
+
+alias mongo_restore="cd ~/VM/mongodb/ && vagrant ssh -c 'cd /vagrant/ && mongorestore > tmp.log' 2> /dev/null && cat tmp.log && rm tmp.log || true; cd - >> /dev/null"
 
 # Manage mariadb
 alias maria_up="cd $MARIA_VM && vagrant up || true; cd - >> /dev/null"
@@ -24,7 +30,7 @@ alias mvn_proxy_on="mv ~/.m2/settings.xml.tmp ~/.m2/settings.xml"
 alias mvn_proxy_off="mv ~/.m2/settings.xml ~/.m2/settings.xml.tmp"
 
 function sublime {
-    /Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text $1 2> /dev/null & 
+	nohup /Applications/"Sublime Text.app"/Contents/MacOS/"Sublime Text" $1 2> /dev/null
 } 
 
 # Work with docker
@@ -39,11 +45,11 @@ alias d_deamon="docker run -d"
 alias d_attach="docker attach"
 alias d_rm_stopped="docker rm $(docker ps -a -q)"
 alias d_rm_stopped="docker rm $(docker ps -a -q)"
-alias d_rm_untagged='docker rmi $(docker images | grep "^<none>" | awk "{print $3}") > /dev/null'
+alias d_rm_untagged="docker rmi $(docker images | grep '^<none>' | awk '{print $3}') > /dev/null"
 
 # Work with proc
 alias is_runned="ps aux | grep -v grep | grep"
-alias mem_top='ps wwaxm -o pid,%cpu,command | head -5'
+alias mem_top="ps wwaxm -o pid,%cpu,command | head -5"
 alias cpu_top="ps wwaxr -o pid,%cpu,command | head -5"
 alias ttop="top -R -F -s 10 -o rsize"
 
@@ -53,14 +59,14 @@ alias search="find . -name"
 alias rsearch="find . -regex"
 
 # Git
-alias git_cancel='git reset --soft HEAD~'
+alias git_cancel="git reset --soft HEAD~"
 
 # Networking
-alias e_hosts='sudo nano /etc/hosts'
-alias my_ip='curl ip.appspot.com && echo'
-alias open_conn='lsof -i'
-alias open_ports='lsof -i | grep LISTEN'
-alias flush_dns='dscacheutil -flushcache'
+alias e_hosts="sudo nano /etc/hosts"
+alias my_ip="curl ip.appspot.com && echo"
+alias open_conn="lsof -i"
+alias open_ports="lsof -i | grep LISTEN"
+alias flush_dns="dscacheutil -flushcache"
 
 # Provisioning
 . ~/DevMe/jiss-provision/aliases.sh

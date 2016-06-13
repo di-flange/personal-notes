@@ -7,8 +7,8 @@ export VM_DIR="$HOME/VM/"
 
 export LOG_DIR="/var/log/"
 
-export MONGO_VM="$HOME/VM/mongodb/"
-export MARIA_VM="$HOME/VM/mariadb/"
+export MONGO_VM="$VM_DIR/mongodb/"
+export MARIA_VM="$VM_DIR/mariadb/"
 
 export SDKMAN_DIR="$HOME/.sdkman"
 

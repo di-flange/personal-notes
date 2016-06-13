@@ -1,23 +1,29 @@
 #!/bin/bash
-export SDKMAN_DIR="~/.sdkman"
-[[ -s "~/.sdkman/bin/sdkman-init.sh" ]] && source "~/.sdkman/bin/sdkman-init.sh"
 
 # Loactaions
-export MONGO_VM="~/VM/mongodb/"
-export MARIA_VM="~/VM/mariadb/"
+export DEV_ME_DIR="$HOME/DevMe/"
+export DEV_DIR="$HOME/Development/"
+export VM_DIR="$HOME/VM/"
+
+export LOG_DIR="/var/log/"
+
+export MONGO_VM="$HOME/VM/mongodb/"
+export MARIA_VM="$HOME/VM/mariadb/"
+
+export SDKMAN_DIR="$HOME/.sdkman"
 
 # Navigation
-alias to_devme="cd ~/DevMe/"
-alias to_dev="cd ~/Development/"
-alias to_vm="cd ~/VM/"
-alias to_log="cd /var/log/"
+alias to_devme="cd $DEV_ME_DIR"
+alias to_dev="cd $DEV_DIR"
+alias to_vm="cd $VM_DIR"
+alias to_log="cd $LOG_DIR"
 
 # Manage mongodb
 alias mongo_up="cd $MONGO_VM && vagrant up || true; cd - >> /dev/null"
 alias mongo_down="cd $MONGO_VM && vagrant halt || true; cd - >> /dev/null"
 alias mongo_reload="cd $MONGO_VM && vagrant reload || true; cd - >> /dev/null"
 
-alias mongo_restore="cd ~/VM/mongodb/ && vagrant ssh -c 'cd /vagrant/ && mongorestore > tmp.log' 2> /dev/null && cat tmp.log && rm tmp.log || true; cd - >> /dev/null"
+alias mongo_restore="cd $MONGO_VM && vagrant ssh -c 'cd /vagrant/ && mongorestore > tmp.log' 2> /dev/null && cat tmp.log && rm tmp.log || true; cd - >> /dev/null"
 
 # Manage mariadb
 alias maria_up="cd $MARIA_VM && vagrant up || true; cd - >> /dev/null"
@@ -78,4 +84,7 @@ alias wifi_on="networksetup -setairportpower airport on"
 alias wifi_off="networksetup -setairportpower airport off"
 
 # Provisioning
-. ~/DevMe/jiss-provision/aliases.sh
+. "$DEV_ME_DIR/jiss-provision/aliases.sh"
+
+# SDKMan 
+source "$SDKMAN_DIR/bin/sdkman-init.sh"

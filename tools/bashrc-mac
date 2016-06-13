@@ -1,6 +1,6 @@
 #!/bin/bash
-export SDKMAN_DIR="/Users/aiskov/.sdkman"
-[[ -s "/Users/aiskov/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/aiskov/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="~/.sdkman"
+[[ -s "~/.sdkman/bin/sdkman-init.sh" ]] && source "~/.sdkman/bin/sdkman-init.sh"
 
 # Loactaions
 export MONGO_VM="~/VM/mongodb/"

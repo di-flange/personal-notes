@@ -50,9 +50,15 @@ alias d_img_rm="docker rmi"
 alias d_pull="docker pull"
 alias d_push="docker push"
 alias d_build="docker build -t"
-alias d_run="docker run -t -i"
+alias d_run="docker run -t -i --net=host"
+alias d_stop="docker stop"
 alias d_deamon="docker run -d"
 alias d_attach="docker attach"
+
+function d_bash {
+    docker exec -it $1 /bin/bash
+}
+
 alias d_rm_stopped='docker rm $(docker ps -a -q)'
 alias d_rm_stopped='docker rm $(docker ps -a -q)'
 alias d_rm_untagged='docker rmi $(docker images | grep '"'"'^<none>'"'"' | awk '"'"'{print $3}'"'"') > /dev/null'

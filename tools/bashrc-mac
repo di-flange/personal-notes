@@ -59,7 +59,11 @@ function d_bash {
     docker exec -it $1 /bin/bash
 }
 
-alias d_rm_stopped='docker rm $(docker ps -a -q)'
+function d_destroy {
+    docker stop $1
+    docker rm $1
+}
+
 alias d_rm_stopped='docker rm $(docker ps -a -q)'
 alias d_rm_untagged='docker rmi $(docker images | grep '"'"'^<none>'"'"' | awk '"'"'{print $3}'"'"') > /dev/null'
 

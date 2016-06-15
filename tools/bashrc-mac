@@ -44,7 +44,7 @@ function mov2mp4 {
 }
 
 # Work with docker
-alias d_ps="docker ps -all"
+alias d_ps="docker ps -a"
 alias d_img="docker images"
 alias d_img_rm="docker rmi"
 alias d_pull="docker pull"
@@ -52,7 +52,7 @@ alias d_push="docker push"
 alias d_build="docker build -t"
 alias d_run="docker run -t -i --net=host"
 alias d_stop="docker stop"
-alias d_deamon="docker run -d"
+alias d_deamon="docker run -d --net=host"
 alias d_attach="docker attach"
 
 function d_bash {

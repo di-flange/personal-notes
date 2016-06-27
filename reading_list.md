@@ -50,3 +50,22 @@
 
 ### Другое ###
 1. The Monk and the Riddle: The Art of Creating a Life While Making a Living Paperback _by Randy Komisar_ 
+
+Список видео материалов
+=======================
+
+Data storages 
+-------------
+
+### Обзоры/Выбор
+
+1. Алексей Зиновьев - Выбор NoSQL базы данных 'Не в свои сани не садись' [@youtube](https://www.youtube.com/watch?v=-SgDfkqeWRs) ✓
+
+Поверхностно о CouchDB, Neo4j, Mongo, Cassandra, HBase, Riak.
+
+### Cassandra
+
+1. Олег Анастасьев — Класс!ная Cassandra [@youtube](https://www.youtube.com/watch?v=k2efjgRxMp8) ✓
+
+Пример использования Cassandr'ы объяснение методов записи, чтения и кеширования.
+

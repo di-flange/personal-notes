@@ -51,8 +51,11 @@
 ### Другое ###
 1. The Monk and the Riddle: The Art of Creating a Life While Making a Living Paperback _by Randy Komisar_ 
 
-Список видео материалов
-=======================
+Языки
+-------
+
+1. Даниеля Вестсайда - Путеводитель неофита по Scala (@github) [https://github.com/anton-k/ru-neophyte-guide-to-scala/blob/master/README.md]
+
 
 Архитектура
 -----------
@@ -60,6 +63,8 @@
 ### Akka
 
 1. Вадим Цесько — Фреймворк Akka и его использование в Яндексе [@youtube](https://www.youtube.com/watch?v=Cc2QtbjUX60) ...
+
+2. Даниеля Вестсайда - Путеводитель неофита по Scala **#Глава 14:** *Параллельные вычисления с помощью акторов* (@github) [https://github.com/anton-k/ru-neophyte-guide-to-scala/blob/master/src/p14-actors.md]
 
 
 Data storages 

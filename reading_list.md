@@ -67,7 +67,7 @@
 
 ### Akka
 
-1. Вадим Цесько — Фреймворк Akka и его использование в Яндексе [@youtube](https://www.youtube.com/watch?v=Cc2QtbjUX60) ...
+1. Вадим Цесько — Фреймворк Akka и его использование в Яндексе [@youtube](https://www.youtube.com/watch?v=Cc2QtbjUX60) ... 32min
 
 2. Даниеля Вестсайда - Путеводитель неофита по Scala **#Глава 14:** *Параллельные вычисления с помощью акторов* [@github](https://github.com/anton-k/ru-neophyte-guide-to-scala/blob/master/src/p14-actors.md)
 

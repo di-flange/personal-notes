@@ -9,16 +9,12 @@
 5. Mule in Action _by David Dossot, John D'Emic, and Victor Romero_
 6. OSGi in Action _by Richard S. Hall, Karl Pauls, Stuart McCulloch, and David Savage_
 7. The Pragmatic Programmer: From Journeyman to Master _by Andrew Hunt, David Thomas_
-8. Groovy in Action _by D. Koenig, A. Glover, P. King, G. Laforge, J. Skeet, J. Gosling_
-9. Scala in Action _by N. Raychaudhuri_
 10. Test Driven: TDD and Acceptance TDD for Java Developers _by L. Koskela_
 11. Pro JPA 2: Mastering the Java Persistence API _by M. Keith, M. Schincariol_
 12. Hibernate in Action _by C. Bauer, G. King_
 13. Aspectj in Action: Enterprise AOP with Spring Applications _by Ramnivas Laddad, Rod Johnson_
 14. Spring in Action _by Graig Walls_ ✓
 15. JavaMessageService _by M. Richards_
-16. OCP Java SE 8 Programmer Study Guide
-17. The Well-Grounded Java Developer: Java 7 and Polyglot Programming on the JVM _by Benjamin J. Evans and Martijn Verburg_
 18. И ботаники делают бизнес _автор Максим Котин_
 
 #### Инфраструктура ####
@@ -53,9 +49,20 @@
 Языки
 -------
 
+### Java 
+
+1. OCP Java SE 8 Programmer Study Guide
+2. Benjamin J. Evans and Martijn Verburg - The Well-Grounded Java Developer: Java 7 and Polyglot Programming on the JVM 
+
+### Groovy
+
+1. D. Koenig, A. Glover, P. King, G. Laforge, J. Skeet, J. Gosling - Groovy in Action
+
 ### Scala 
 
 1. Даниеля Вестсайда - Путеводитель неофита по Scala [@github] (https://github.com/anton-k/ru-neophyte-guide-to-scala/blob/master/README.md)
+
+2. N. Raychaudhuri - Scala in Action
 
 
 Архитектура

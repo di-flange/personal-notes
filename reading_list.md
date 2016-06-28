@@ -25,7 +25,6 @@
 1. http://habrahabr.ru/post/236341/
 
 #### Архитектура и проектирование ####
-1. Patterns of Enterprise Application Architecture _by Martin Fowler_ ✓
 2. Domain-Driven Design: Tackling Complexity in the Heart of Software _by Eric Evans_
 3. Model-Driven Design Using Business Patterns _by Pavel Hruby_
 4. You Can't Sacrifice Partition Tolerance [WWW] [http://codahale.com](http://codahale.com) _by Coda Hale_
@@ -61,6 +60,10 @@
 
 Архитектура
 -----------
+
+### Структуры
+
+1. Patterns of Enterprise Application Architecture _by Martin Fowler_ ✓
 
 ### Akka
 

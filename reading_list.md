@@ -54,6 +54,8 @@
 Языки
 -------
 
+### Scala 
+
 1. Даниеля Вестсайда - Путеводитель неофита по Scala [@github] (https://github.com/anton-k/ru-neophyte-guide-to-scala/blob/master/README.md)
 
 

@@ -1,6 +1,3 @@
-Список литературы
-===================
-
 ### Разработка ###
 1. Camel in Action _by Claus Ibsen and Jonathan Anstey_
 2. Enterprise OSGi in Action _by Holly Cummins and Timothy Ward_
@@ -19,14 +16,6 @@
 
 #### Инфраструктура ####
 1. http://habrahabr.ru/post/236341/
-
-#### Архитектура и проектирование ####
-2. Domain-Driven Design: Tackling Complexity in the Heart of Software _by Eric Evans_
-3. Model-Driven Design Using Business Patterns _by Pavel Hruby_
-4. You Can't Sacrifice Partition Tolerance [WWW] [http://codahale.com](http://codahale.com) _by Coda Hale_
-5. BASE an ACID Alternative _by D. Pritchett on ACM Queue May/June, Page 48-55_
-6. A certain freedom: thoughts on the CAP theorem _by E. Brewer_
-7. Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services _by S. Gilbert, N. Lynch_
 
 ### Управление, организация, развитие ###
 1. Rework _by Jason Fried_ ✓
@@ -70,7 +59,13 @@
 
 ### Структуры
 
-1. Patterns of Enterprise Application Architecture _by Martin Fowler_ ✓
+1. Martin Fowler - Patterns of Enterprise Application Architecture ✓
+2. Eric Evans - Domain-Driven Design: Tackling Complexity in the Heart of Software
+3. Pavel Hruby - Model-Driven Design Using Business Patterns
+4. Coda Hale - You Can't Sacrifice Partition Tolerance [WWW] [http://codahale.com](http://codahale.com)
+5. D. Pritchett on ACM Queue May/June, Page 48-55 - BASE an ACID Alternative ✓
+6. E. Brewer - A certain freedom: thoughts on the CAP theorem
+7. S. Gilbert, N. Lynch - Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services
 
 ### Akka
 

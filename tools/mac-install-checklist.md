@@ -13,6 +13,7 @@
 * Virtual box
 * Vagrant
 * Docker
+* SOAP UI
 
 ## Graphic: 
 * Skitch

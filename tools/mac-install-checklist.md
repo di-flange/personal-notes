@@ -6,14 +6,13 @@
 * icdiff (brew install icdiff)
 * ffmpeg (brew install ffmpeg)
 * 7zip (brew install p7zip)
-
-* Vagrant
-* Docker 
-
 * HTTPie (brew install HTTPie)
 
 ## Development
 * Intellij Idea
+* Virtual box
+* Vagrant
+* Docker
 
 ## Graphic: 
 * Skitch

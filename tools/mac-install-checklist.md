@@ -29,6 +29,10 @@
 * Pixlr
 * GIMP
 
-### Messaging
+## Messaging
 * Slack (app store)
 * Skype (skype.com)
+
+## Media 
+* VLC
+* Spotify 

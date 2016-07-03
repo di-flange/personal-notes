@@ -14,6 +14,8 @@
 * Vagrant
 * Docker
 * SOAP UI
+* MySQL Workbench
+* Robomongo
 
 ## Graphic: 
 * Skitch

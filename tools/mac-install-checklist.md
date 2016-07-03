@@ -1,8 +1,10 @@
 ## Command line 
-* GIT
-* CURL
+* brew
+* GIT (brew install git)
+* CURL (brew install curl)
+* WGET (brew install wget)
 * icdiff (brew install icdiff)
-* ffmpeg
+* ffmpeg (brew install ffmpeg)
 * 7zip (brew install p7zip)
 
 * Vagrant
@@ -13,3 +15,7 @@
 ## Graphic: 
 * Skitch
 * Pixlr
+
+### Messaging
+* Slack (app store)
+* Skype (skype.com)

@@ -9,6 +9,13 @@
 * HTTPie (brew install HTTPie)
 
 ## Development
+* JDK
+* sdkman
+* Scala (sdk install scala)
+* Groovy (sdk install groovy)
+* Maven (sdk install maven)
+* SBT (sdk install sbt)
+* Gradle (sdk install gradle)
 * Intellij Idea
 * Virtual box
 * Vagrant

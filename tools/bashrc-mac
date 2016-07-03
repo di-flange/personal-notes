@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Loactaions
-export DEV_ME_DIR="$HOME/DevMe/"
 export DEV_DIR="$HOME/Development/"
 export VM_DIR="$HOME/VM/"
 
@@ -13,7 +12,6 @@ export MARIA_VM="$VM_DIR/mariadb/"
 export SDKMAN_DIR="$HOME/.sdkman"
 
 # Navigation
-alias to_devme="cd $DEV_ME_DIR"
 alias to_dev="cd $DEV_DIR"
 alias to_vm="cd $VM_DIR"
 alias to_log="cd $LOG_DIR"
@@ -94,7 +92,7 @@ alias wifi_on="networksetup -setairportpower airport on"
 alias wifi_off="networksetup -setairportpower airport off"
 
 # Provisioning
-. "$DEV_ME_DIR/jiss-provision/aliases.sh"
+. "$DEV_DIR/jiss-provision/aliases.sh"
 
 # SDKMan 
 source "$SDKMAN_DIR/bin/sdkman-init.sh"

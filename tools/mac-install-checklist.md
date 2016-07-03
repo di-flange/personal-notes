@@ -8,13 +8,17 @@
 * 7zip (brew install p7zip)
 
 * Vagrant
-* Docker
+* Docker 
 
 * HTTPie (brew install HTTPie)
+
+## Development
+* Intellij Idea
 
 ## Graphic: 
 * Skitch
 * Pixlr
+* GIMP
 
 ### Messaging
 * Slack (app store)

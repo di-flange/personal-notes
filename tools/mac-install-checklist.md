@@ -11,6 +11,7 @@
 ## Development
 * JDK
 * sdkman
+* ansible (brew install ansible)
 * Scala (sdk install scala)
 * Groovy (sdk install groovy)
 * Maven (sdk install maven)

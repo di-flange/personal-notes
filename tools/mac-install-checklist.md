@@ -17,7 +17,7 @@
 * Maven (sdk install maven)
 * SBT (sdk install sbt)
 * Gradle (sdk install gradle)
-* Intellij Idea
+* Intellij Idea (gitignore)
 * Virtual box
 * Vagrant
 * Docker

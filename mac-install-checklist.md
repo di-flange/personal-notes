@@ -13,6 +13,9 @@
 * Pixlr
 * GIMP
 
+## Documents
+* LibreOffice 
+
 ## Messaging
 * Slack (app store)
 * Skype (skype.com)

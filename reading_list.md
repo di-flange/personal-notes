@@ -21,7 +21,7 @@
 1. Rework _by Jason Fried_ ✓
 2. Remote: Office Not Required _by Jason Fried_ ✓
 3. Getting Real _by Jason Fried_
-4. The Lean Startup _by Eric Ries_
+4. The Lean Startup _by Eric Ries_ ✓
 5. Как стать авантюристом? Размышления миллионера _авторы Геннадий Балашов, Полина Кудиевская_
 6. Lean B2B _by Étienne Garbugli_
 
